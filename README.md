@@ -1,24 +1,19 @@
-# README
+# Desafío - Second App 15-07-21
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Octavo desafío del módulo "Desarrollo de aplicaciones web con Rails" @DesafíoLatam. El objetivo es realizar una aplicación utilizando los conceptos básicos de Rails, utilizanfo formularios html.
 
-Things you may want to cover:
+## Content
 
-* Ruby version
+Este proyecto tiene sólo la rama main, que contiene principalmente las vistas:
+* index.html.erb -> landing page 
+* test.html.erb -> imagen helios
+* login.html.erb -> parrafo lorem ipsum
+* about_us.html.erb -> parrafo lorem ipsum
 
-* System dependencies
+## Constructed with
+* Ruby 2.6.0
 
-* Configuration
+* Rails 5.2.6
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Demo
+https://projectmanager-1.herokuapp.com/
