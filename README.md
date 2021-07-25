@@ -1,6 +1,6 @@
 # Desafío - Project Manager 22-07-21
 
-Octavo desafío del módulo "Desarrollo de aplicaciones web con Rails" @DesafíoLatam. El objetivo es realizar una aplicación utilizando los conceptos básicos de Rails, utilizanfo formularios html.
+Octavo desafío del módulo "Desarrollo de aplicaciones web con Rails" @DesafíoLatam. El objetivo es realizar una aplicación utilizando los conceptos básicos de Rails, utilizando formularios html.
 
 ## Content
 
