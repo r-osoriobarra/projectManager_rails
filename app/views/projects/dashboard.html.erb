@@ -1,2 +1,33 @@
-<h1>Projects#dashboard</h1>
-<p>Find me in app/views/projects/dashboard.html.erb</p>
+<h1>Lista de proyectos</h1>
+
+<h2>Filtrar por estado de proyecto</h2>
+
+<%# filter by state %>
+<form>
+    <select name="state" id="state">
+        <option value="propuesta">Propuesta</option>
+        <option value="en_progreso">En progreso</option>
+        <option value="terminado">Terminado</option>
+    </select>
+    <input type="submit" value="Filtrar">
+</form>
+
+<%# project table %>
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Descripcion</th>
+        <th>Fehcha de inicio</th>
+        <th>Fecha de termino</th>
+        <th>Estado</th>    
+    </tr>
+    <% @projects.each do |project| %>
+        <tr>
+            <td><%= project.name %></td>
+            <td><%= project.description %></td>
+            <td><%= project.start_date%></td>
+            <td><%= project.end_date %></td>
+            <td><%= project.state %></td>
+        </tr>
+    <% end %>
+</table>

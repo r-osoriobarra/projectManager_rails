@@ -1,12 +1,15 @@
-<h1>Crea un nuevo proyecto!</h1>
+<h1>Crea un nuevo proyecto</h1>
+
+<%# Project form %>
 <div class="form">
     <form action="/projects/create" method="post">
+    <input type="hidden" name="authenticity_token" value="<% form_authenticity_token %>"
         <label for="name">Nombre: </label>
         <input type="text" name="name"><br>
         <label for="description">Descripcion: </label>
         <input type="text" name="description"><br>
         <label for="start_date">Fecha de inicio: </label>
-        <input type="date" name="start_name"><br>
+        <input type="date" name="start_date"><br>
         <label for="end_date">Fecha de termino:</label>
         <input type="date" name="end_date"><br>
         <label for="state">Estado del proyecto:</label>
