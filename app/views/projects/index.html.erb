@@ -1,6 +1,9 @@
-<h1>Crea un nuevo proyecto</h1>
+<%# Go to dashboard %>
+<%= link_to 'Ver proyectos', projects_dashboard_path %>
 
 <%# Project form %>
+<h1>Crea un nuevo proyecto</h1>
+
 <div class="form">
     <form action="/projects/create" method="post">
     <input type="hidden" name="authenticity_token" value="<% form_authenticity_token %>"
