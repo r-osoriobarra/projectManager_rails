@@ -1,0 +1,74 @@
+:root{
+    --fuente: 'Open Sans', sans-serif;
+}
+
+/* Globales */
+body{
+    font-family: var(--fuente);
+}
+
+/* inputs */
+input[type=text], input[type=date], select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+width: 100%;
+background-color:  #856ee9;
+color: white;
+padding: 1em 0;
+margin: 8px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+input[type=submit]:hover {
+background-color:#5a12ac;
+}
+
+/* labels */
+
+label {
+    font-weight: 600;
+}
+
+/* titles */
+h1 {
+    text-align: center;
+}
+
+/* divs */
+div {
+border-radius: 1em;
+background-color: #f2f2f2;
+padding: 2em 15em;
+}
+
+div.table {
+    padding: 1em 1em;
+}
+
+td {
+    text-align: center;
+    padding: 1em 1em;
+    font-size: 80%;
+}
+
+th {
+    text-align: center;
+    padding: 1em 3em;
+}
+
+div.link {
+    background-color: white;
+    padding: 0em 3em;
+    text-align: right;
+    text-decoration: none;
+}

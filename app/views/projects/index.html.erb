@@ -1,25 +1,27 @@
 <%# Go to dashboard %>
-<%= link_to 'Ver proyectos', projects_dashboard_path %>
+<div class="link">
+    <%= link_to 'Ver proyectos', projects_dashboard_path %>
+</div>
 
 <%# Project form %>
 <h1>Crea un nuevo proyecto</h1>
 
-<div class="form">
+<div>
     <form action="/projects/create" method="post">
-    <input type="hidden" name="authenticity_token" value="<% form_authenticity_token %>"
+        <input type="hidden" name="authenticity_token" value="<% form_authenticity_token %>">
         <label for="name">Nombre: </label>
         <input type="text" name="name"><br>
-        <label for="description">Descripcion: </label>
+        <label for="description">Descripción: </label>
         <input type="text" name="description"><br>
         <label for="start_date">Fecha de inicio: </label>
         <input type="date" name="start_date"><br>
-        <label for="end_date">Fecha de termino:</label>
+        <label for="end_date">Fecha de término:</label>
         <input type="date" name="end_date"><br>
         <label for="state">Estado del proyecto:</label>
         <select name="state" id="state">
-            <option value="propuesta" selected>Propuesta</option>
-            <option value="en_progreso">En progreso</option>
-            <option value="terminado">Terminado</option>
+            <option value="Propuesta" selected>Propuesta</option>
+            <option value="En progreso">En progreso</option>
+            <option value="Terminado">Terminado</option>
         </select><br>
         <input type="submit" value="Crear proyecto">
     </form>

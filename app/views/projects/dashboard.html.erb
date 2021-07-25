@@ -1,35 +1,39 @@
 <%# Go to index %>
-<%= link_to 'Crear un proyecto', root_path %>
+<div class="link">
+    <%= link_to 'Crear un proyecto', root_path %>
+</div>
 
-<%# filter by state %>
+<%# Filter by state %>
 <h1>Lista de proyectos</h1>
-<h2>Filtrar por estado de proyecto</h2>
+<div class="table">
+    <p>Filtrar por estado de proyecto:</p>
 
-<form>
-    <select name="state" id="state">
-        <option value="propuesta">Propuesta</option>
-        <option value="en_progreso">En progreso</option>
-        <option value="terminado">Terminado</option>
-    </select>
-    <input type="submit" value="Filtrar">
-</form>
+    <form>
+        <select name="state">
+            <option value="Propuesta">Propuesta</option>
+            <option value="En progreso">En progreso</option>
+            <option value="Terminado">Terminado</option>
+        </select>
+        <input type="submit" value="Filtrar">
+    </form>
 
-<%# project table %>
-<table>
-    <tr>
-        <th>Nombre</th>
-        <th>Descripcion</th>
-        <th>Fehcha de inicio</th>
-        <th>Fecha de termino</th>
-        <th>Estado</th>    
-    </tr>
-    <% @projects.each do |project| %>
+    <%# Project table %>
+    <table>
         <tr>
-            <td><%= project.name %></td>
-            <td><%= project.description %></td>
-            <td><%= project.start_date%></td>
-            <td><%= project.end_date %></td>
-            <td><%= project.state %></td>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+            <th>Fecha de inicio</th>
+            <th>Fecha de termino</th>
+            <th>Estado</th>    
         </tr>
-    <% end %>
-</table>
+        <% @projects.each do |project| %>
+            <tr>
+                <td><%= project.name %></td>
+                <td><%= project.description %></td>
+                <td><%= project.start_date%></td>
+                <td><%= project.end_date %></td>
+                <td><%= project.state %></td>
+            </tr>
+        <% end %>
+    </table>
+</div>

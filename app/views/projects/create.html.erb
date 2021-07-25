@@ -1,8 +1,12 @@
-<%# Go to index %>
-<%= link_to 'Crear un proyecto', root_path  %>
+<div class="link">
+    <%# Go to index %>
+    <%= link_to 'Crear un proyecto', root_path  %>
+    <%# Go to dashboard %>
+    <%= link_to 'Ver proyectos', projects_dashboard_path %>
+</div>
 
 <%# Show errors %>
-<div class="erros">
+<div class="errors">
     <% if @project.errors.any? %>
         <h2>
             <%= pluralize(@project.errors.count, "errores") %>
