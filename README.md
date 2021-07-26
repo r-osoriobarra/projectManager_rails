@@ -5,10 +5,9 @@ Octavo desafío del módulo "Desarrollo de aplicaciones web con Rails" @Desafío
 ## Content
 
 Este proyecto tiene sólo la rama main, que contiene principalmente las vistas:
-* index.html.erb -> landing page 
-* test.html.erb -> imagen helios
-* login.html.erb -> parrafo lorem ipsum
-* about_us.html.erb -> parrafo lorem ipsum
+* index.html.erb -> landing page con formulario
+* create.html.erb -> validación de datos
+* dashboard.html.erb -> tabla para visualizar datos ingresados
 
 ## Constructed with
 * Ruby 2.6.0
