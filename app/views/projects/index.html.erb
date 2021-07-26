@@ -8,7 +8,7 @@
 
 <div>
     <form action="/projects/create" method="post">
-        <input type="hidden" name="authenticity_token" value="<% form_authenticity_token %>">
+        <%= token_tag %>
         <label for="name">Nombre: </label>
         <input type="text" name="name"><br>
         <label for="description">Descripción: </label>
